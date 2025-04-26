@@ -1,0 +1,116 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background and font */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for centering the form */
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Form wrapper */
+.form-wrapper {
+    text-align: center;
+}
+
+/* Heading style */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input groups */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Icon styling */
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+/* Input fields */
+input[type="text"], input[type="email"], input[type="tel"], select {
+    width: 100%;
+    padding: 12px 15px 12px 35px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Focus effect on inputs */
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus {
+    border-color: #007BFF;
+}
+
+/* Select box styling */
+select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+/* Submit button */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for submit button */
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design for small screens */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .input-group i {
+        font-size: 18px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+    }
+}
