@@ -1,0 +1,197 @@
+<html>
+<head>
+  <title>Prac9 Bootstrap</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Forts</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Forts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Visit us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+
+ 
+
+  <!-- Carousel -->
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrQHbe5OcBsyf1mtqoZHfHSO5_qZtnFqK-nbcdPCFR52EvRbPzeAOWhC62PqKWXj1JORuuJdVUvLNoB4MmDViBEo0pWf34RWXvyJdqjPVkc6fpPFQnHNOecY_AoqZabMBi0-hQONQ=w270-h312-n-k-no">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>TAJ MEHEL(Agra)</h5>
+          <p>The Taj MAHAL is a symbol of eternal love, built by Shah Jahan in memory of his wife Mumtaz Mahal</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqEl1k4B_zwOcWl77oPVs0ZjXda2i12SBLtoW7HX4R29Ci5lgBB1GxdFf8-DNrtsMbjkI3DDigxQUkZCjpwoTfopbfx1MbUt7vo4bTzo3ZVOPnhm92md73umILohNN5ZR_VU20kNQ=w270-h312-n-k-no">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>INDIA GATE </h5>
+          <p>India Gate is a war memorial in Delhi built to honor soldiers who died in World War . </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="data:image/jpeg;base64,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">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>RAM MANDIR(Ayodhya)</h5>
+          <p>Ram mandir is a Hindu temple in Ayodhya dedicated to Lord Ram, built at his believed birthplace.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <div class="container my-5">
+    <h2 class="mb-4">FAQ Accordion</h2>
+
+    <div class="accordion" id="accordionExample">
+
+      <!-- Item 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Who built the Taj Mahal?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Shah Jahan Built it.
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+            aria-expanded="false" aria-controls="collapseTwo">
+            Where is india Gate located?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Delhi,the heart of the India,stands as a city where history meets modernity, reflecting the spirit of resilience, culture,and unity.
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+            aria-expanded="false" aria-controls="collapseThree">
+            What is special about the site?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            It is believed to be Ram's birthplace.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+
+  
+
+  <!-- Your main content goes here -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-4 pb-2 mt-5">
+    <div class="container text-center text-md-start">
+      <div class="row">
+
+        <!-- Column 1 -->
+        <div class="col-md-3 mb-3">
+          <h5>MySite</h5>
+          <p>Building modern and responsive websites with ease.</p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="col-md-3 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-white text-decoration-none">About</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="col-md-3 mb-3">
+          <h5>Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+            <li><a href="#" class="text-white text-decoration-none">FAQs</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="col-md-3 mb-3">
+          <h5>Follow Us</h5>
+          <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i> Facebook</a><br>
+          <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i> Twitter</a><br>
+          <a href="#" class="text-white"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-3">
+        <small>&copy; 2025 MySite. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
